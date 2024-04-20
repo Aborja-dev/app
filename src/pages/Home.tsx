@@ -2,9 +2,9 @@ import { Header, Hero, Cart, Reviews, Authors, Footer } from "../components"
 
 export const HomePage = () => {
     return (
-        <div>
+        <div className="w-full bg-slate-100">
             <Header />
-            <main className="bg-slate-50 w-full h-screen">
+            <main className="w-5/6 m-auto  h-screen">
             <Hero />
             <Cart />
             <Reviews />
