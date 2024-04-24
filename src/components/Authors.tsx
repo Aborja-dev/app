@@ -1,3 +1,5 @@
+import { AuthorItem } from "./cards/AuthorItem"
+
 export const Authors = () => {
     return (
         <div className="mt-10 h-full mb-10">
@@ -12,40 +14,16 @@ export const Authors = () => {
             </div>
             <section className="grid grid-cols-4 gap-10">
                 <div className="col-span-1">
-                    <article className="group flex items-center flex-col gap-2 p-3">
-                        <div className="w-32 h-32 border rounded-full overflow-hidden">
-                            <img src="12.jpg" className="object-cover object-center w-full h-full" alt="" />
-                        </div>
-                        <p className="capitalize font-bold tracking-wide">Author</p>
-                        <p className="italic font-thin text-gray-500">2 libros publicados</p>
-                    </article>
+                    <AuthorItem />
                 </div>
                 <div className="col-span-1">
-                    <article className="group flex items-center flex-col gap-2 p-3">
-                        <div className="w-32 h-32 border rounded-full overflow-hidden">
-                            <img src="12.jpg" className="object-cover object-center w-full h-full" alt="" />
-                        </div>
-                        <p className="capitalize font-bold tracking-wide">Author</p>
-                        <p className="italic font-thin text-gray-500">2 libros publicados</p>
-                    </article>
+                    <AuthorItem />
                 </div>
                 <div className="col-span-1">
-                    <article className="group flex items-center flex-col gap-2 p-3">
-                        <div className="w-32 h-32 border rounded-full overflow-hidden">
-                            <img src="12.jpg" className="object-cover object-center w-full h-full" alt="" />
-                        </div>
-                        <p className="capitalize font-bold tracking-wide">Author</p>
-                        <p className="italic font-thin text-gray-500">2 libros publicados</p>
-                    </article>
+                    <AuthorItem />
                 </div>
                 <div className="col-span-1">
-                    <article className="group flex items-center flex-col gap-2 p-3">
-                        <div className="w-32 h-32 border rounded-full overflow-hidden">
-                            <img src="12.jpg" className="object-cover object-center w-full h-full" alt="" />
-                        </div>
-                        <p className="capitalize font-bold tracking-wide">Author</p>
-                        <p className="italic font-thin text-gray-500">2 libros publicados</p>
-                    </article>
+                    <AuthorItem />
                 </div>
             </section>
         </div>
