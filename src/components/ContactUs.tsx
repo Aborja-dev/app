@@ -3,6 +3,7 @@ import { SectionLayout } from "../layout/SectionLayout"
 export const ContactUs = () => {
     return (
         <SectionLayout
+            title=""
             header={
             <div className="px-5 flex justify-between border-b border-b-slate-400 w-100 items-center h-[70px] mb-16"></div>}>
             <section className="text-center">
