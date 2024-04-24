@@ -8,7 +8,7 @@ export const Authors: React.FC<Props> = ({ authors }) => {
 
     return (
         <SectionLayout title="Nuestros autores">
-            <section className="grid grid-cols-4 gap-10">
+            <section className="grid lg:grid-cols-4 md:grid-cols-1 gap-10">
                 {
                     authors.map((author) => (
                         <div className="col-span-1">
