@@ -1,18 +1,17 @@
-import { Header, Hero, Cart, Reviews, Authors, Footer } from "../components"
+import { Hero, Cart, Reviews, Authors } from "../components"
 import { ContactUs } from "../components/ContactUs"
+import { BaseLayout } from "../layout/BaseLayout"
 
 export const HomePage = () => {
     return (
         <div className="w-full bg-slate-100">
-            <Header />
-            <main className="w-5/6 m-auto">
-            <Hero />
-            <Cart />
-            <Reviews />
-            <Authors />
-            <ContactUs />
-            </main>
-            <Footer />
+            <BaseLayout >
+                <Hero />
+                <Cart />
+                <Reviews />
+                <Authors />
+                <ContactUs />
+            </BaseLayout >
         </div>
     )
 }

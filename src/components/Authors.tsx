@@ -1,10 +1,10 @@
-import { SectionHeader } from "./SectionHeader"
+import { SectionLayout } from "../layout/SectionLayout"
+
 import { AuthorItem } from "./cards/AuthorItem"
 
 export const Authors = () => {
     return (
-        <div className="mt-10 h-full mb-10">
-            <SectionHeader />
+        <SectionLayout>
             <section className="grid grid-cols-4 gap-10">
                 <div className="col-span-1">
                     <AuthorItem />
@@ -19,6 +19,6 @@ export const Authors = () => {
                     <AuthorItem />
                 </div>
             </section>
-        </div>
+        </SectionLayout>
     )
 }
