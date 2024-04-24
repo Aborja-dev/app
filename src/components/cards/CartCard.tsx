@@ -30,8 +30,8 @@ export const CartCard = () => {
                         w-full
                         transition duration-300     
                         flex justify-between mt-4 items-center h-[50px]">
-                                <p className="text-lg text-gray-600 font-thin tracking-wide uppercase">ADD TO CART</p>
-                                <div className="w-8 h-8">
+                                <p className="text-lg text-gray-600 font-thin tracking-wide uppercase hover:text-blue-500 hover:cursor-pointer">ADD TO CART</p>
+                                <div className="w-8 h-8 hover:bg-blue-500 animate-all duration-200 p-2 rounded-full overflow-hidden box-content">
                                     <img src="heart-svgrepo-com.svg" alt="" />
                                 </div>
                             </div>

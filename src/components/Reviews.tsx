@@ -7,10 +7,10 @@ export const Reviews = () => {
         <SectionLayout
             navbar={
             <ul className="py-2 flex justify-center gap-4">
-                <li>Fantasia</li>
-                <li>Cronica</li>
-                <li>Novela</li>
-                <li>Comedia</li>
+                <li className="hover:text-blue-500 hover:border-b hover:border-b-blue-500 transition-all duration-200 hover:cursor-pointer">Fantasia</li>
+                <li className="hover:text-blue-500 hover:border-b hover:border-b-blue-500 transition-all duration-200 hover:cursor-pointer">Cronica</li>
+                <li className="hover:text-blue-500 hover:border-b hover:border-b-blue-500 transition-all duration-200 hover:cursor-pointer">Novela</li>
+                <li className="hover:text-blue-500 hover:border-b hover:border-b-blue-500 transition-all duration-200 hover:cursor-pointer">Comedia</li>
             </ul>
             }>
             <section className="grid grid-cols-3 pt-10 gap-3">

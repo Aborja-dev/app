@@ -13,7 +13,7 @@ export const Header = () => {
                 <ul className="flex justify-center h-full items-center gap-4 text-xl" >
                     {
                         routes.map((route, index) => 
-                        <li key={index} className="pb-2 hover:border-b-2 hover:border-blue-300">{route}</li>)
+                        <li key={index} className="pb-2 border-b-0 hover:border-b-4 transition-all duration-500 hover:border-blue-300">{route}</li>)
                     }
                 </ul>
             </div>
