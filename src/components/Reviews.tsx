@@ -1,37 +1,10 @@
 import { SectionLayout } from "../layout/SectionLayout"
 import { BlogEntry } from "../types/types"
 import { BlogEntryItem } from "./cards/BlogEntryItem"
-
-export const Reviews = () => {
-    const reviews: BlogEntry[] = [
-        {
-            urlImg: 'https://random.imagecdn.app/500/500',
-            tags: ['Fantasia', 'Terror'],
-            title: 'Terror',
-            date: '2022-01-01',
-            summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, corrupti!',
-            comments: 5,
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'https://random.imagecdn.app/500/500',
-            tags: ['Fantasia'],
-            title: 'Terror',
-            date: '2022-01-01',
-            summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, corrupti!',
-            comments: 5,
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'https://random.imagecdn.app/500/500',
-            tags: ['Fantasia'],
-            title: 'Terror',
-            date: '2022-01-01',
-            summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, corrupti!',
-            comments: 5,
-            subtitle: 'Abraham'
-        }
-    ]
+interface Props {
+    reviews: BlogEntry[]
+}
+export const Reviews: React.FC<Props> = ({ reviews }) => {
     return (
         <SectionLayout
             title="Ultimas entradas"

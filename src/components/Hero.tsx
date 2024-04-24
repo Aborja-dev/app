@@ -1,53 +1,25 @@
+import { BlogEntry, Book } from "../types/types"
 import { HeroCard } from "./cards/HeroCard"
-
-export const Hero = () => {
-    const cards: {
-        urlImg: string
-        title: string
-        subtitle: string
-    }[] = [
-        {
-            urlImg: 'url(https://random.imagecdn.app/500/500)',
-            title: 'Terror',
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'url(https://random.imagecdn.app/500/500)',
-            title: 'Terror',
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'url(https://random.imagecdn.app/500/500)',
-            title: 'Terror',
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'url(https://random.imagecdn.app/500/500)',
-            title: 'Terror',
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'url(https://random.imagecdn.app/500/500)',
-            title: 'Terror',
-            subtitle: 'Abraham'
-        }
-    ]
+interface Props {
+    items: Array<Book | BlogEntry>
+}
+export const Hero: React.FC<Props > = ({items}) => {
     return (
         <div className="grid grid-cols-4 gap-2 auto-rows-auto pt-10 h-[550px] ">
             <div className="col-span-2 row-span-2 relative overflow-hidden">
-                <HeroCard {...cards[0]} large />
+                <HeroCard {...items[0]} urlImg={`url(${items[0].urlImg})`} large />
             </div>
             <div className="col-span-1 row-span-1 relative overflow-hidden">
-                <HeroCard {...cards[1]}/>
+                <HeroCard {...items[1]} urlImg={`url(${items[1].urlImg})`}/>
             </div>
             <div className="col-span-1 row-span-1 relative overflow-hidden">
-                <HeroCard {...cards[2]}/>
+                <HeroCard {...items[2]} urlImg={`url(${items[2].urlImg})`}/>
             </div>
             <div className="col-span-1 row-span-1 relative overflow-hidden">
-                <HeroCard {...cards[3]}/>
+                <HeroCard {...items[3]} urlImg={`url(${items[3].urlImg})`}/>
             </div>
             <div className="col-span-1 row-span-1 relative overflow-hidden">
-                <HeroCard {...cards[4]}/>
+                <HeroCard {...items[4]} urlImg={`url(${items[4].urlImg})`}/>
             </div>
         </div>
     )

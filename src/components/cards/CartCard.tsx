@@ -5,7 +5,7 @@ import { Rating } from "../shared/Rating"
 
 export const CartCard: React.FC<Book> = ({ urlImg, tags, author, price, rating, title }) => {
     return (
-        <article className=" group bg-white border shadow-sm flex flex-col p-3 overflow-hidden">
+        <article className=" group bg-white border shadow-sm flex flex-col p-3 overflow-hidden hover:border-black">
                         <div className="w-full flex justify-center p-4 pb-20">
                             <img src={urlImg} alt="book cover" />
                         </div>

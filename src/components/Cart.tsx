@@ -1,58 +1,11 @@
 import { SectionLayout } from "../layout/SectionLayout"
 import { Book } from "../types/types"
 import { CartCard } from "./cards/CartCard"
-
-export const Cart = () => {
-    const books: Book[] = [
-        {
-            urlImg: 'https://random.imagecdn.app/500/500',
-            tags: ['Fantasia'],
-            author: 'Abraham',
-            price: 10.99,
-            rating: 4,
-            title: 'Terror',
-            date: '2022-01-01',
-            summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, corrupti!',
-            comments: 5,
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'https://random.imagecdn.app/500/500',
-            tags: ['Fantasia'],
-            author: 'Abraham',
-            price: 10.99,
-            rating: 4,
-            title: 'Terror',
-            date: '2022-01-01',
-            summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, corrupti!',
-            comments: 5,
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'https://random.imagecdn.app/500/500',
-            tags: ['Fantasia'],
-            author: 'Abraham',
-            price: 10.99,
-            rating: 4,
-            title: 'Terror',
-            date: '2022-01-01',
-            summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, corrupti!',
-            comments: 5,
-            subtitle: 'Abraham'
-        },
-        {
-            urlImg: 'https://random.imagecdn.app/500/500',
-            tags: ['Fantasia'],
-            author: 'Abraham',
-            price: 10.99,
-            rating: 4,
-            title: 'Terror',
-            date: '2022-01-01',
-            summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, corrupti!',
-            comments: 5,
-            subtitle: 'Abraham'
-        },
-    ]
+interface Props {
+    books: Book[]
+}
+export const Cart: React.FC<Props> = ({ books }) => {
+    
     return (
         <SectionLayout title="Carrito de compras">
             <section className="grid grid-cols-4 gap-4">
