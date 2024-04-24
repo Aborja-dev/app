@@ -28,7 +28,7 @@ export const HeroCard: React.FC<Props> = ({large = false, urlImg, title, subtitl
             </div>
             <div className={
                 `flex flex-col justify-center p-5 gap-3 w-3/4 z-20 absolute hover:cursor-pointer
-                ${large ? 'top-1/3' : 'top-0'}`}>
+                ${large ? 'lg:top-1/3 md:top-0' : 'top-0'}`}>
                 <h3 className={styles.subtitle}>{subtitle}</h3>
                 <h2 className={styles.title}>{title}</h2>
                 <button className={styles.button}>Ver mas</button>

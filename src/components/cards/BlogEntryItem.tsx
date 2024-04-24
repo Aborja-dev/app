@@ -9,7 +9,7 @@ export const BlogEntryItem: React.FC<BlogEntry> = ({ urlImg, tags, title, date, 
             <div className="p-5 flex flex-col gap-2">
                 <p className="uppercase text-red-600 tracking-wide">{tags.join(", ")}</p>
                 <h2 className="hover:text-blue-700  text-2xl font-bold tracking-wide">{title}</h2>
-                <p className="h-[100px]  line-clamp-4">{summary}</p>
+                <p className="md:h-[100px] h-[50px] line-clamp-2 md:line-clamp-4">{summary}</p>
             </div>
             <div className="p-5 flex justify-between text-gray-500 font-thin">
                 <div className="flex gap-2 items-center">
