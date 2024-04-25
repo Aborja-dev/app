@@ -1,31 +1,27 @@
 
 import {  Navbar } from "flowbite-react";
 import { SearchBar } from "../shared/SearchBar";
+import { Brand } from "../shared/Brand";
 const routes = ["Home", "Categorias", "Shop", "Blog"]
 export function Navigation() {
     return (
         <Navbar className=" bg-slate-300 pt-5 px-5 h-20 shadow-md sticky top-0 z-30">
           <Navbar.Brand>
-          <figure className="w-10 mr-2">
-                    <img src="logo-removebg-preview.png" alt="logo" />
-                </figure>
-                <h1 className="text-lg italic">La Biblioteca Infinita</h1>
+              <Brand />
           </Navbar.Brand>
           <Navbar.Toggle />
-          <Navbar.Collapse className="
-
-          
-          ">
+          <Navbar.Collapse className="">
             
+            <div className="flex items-center flex-grow gap-2">
             {
                 routes.map((route, index) => 
-                    <Navbar.Link key={index} href="#">
+                    <Navbar.Link className="text-xl" key={index} href="#">
                         {route}
                     </Navbar.Link>
             )}
-            <div className="pb-2">
-            <SearchBar />
             </div>
+            <SearchBar />
+            
           </Navbar.Collapse>
         </Navbar>
       );
