@@ -13,10 +13,10 @@ export function Navigation() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse className="bg-white md:bg-transparent md:items-center">
-        <SearchBar className="md:order-4 md:w-40 ml-4" />
+        <SearchBar className="md:order-4 md:w-40 ml-4 lg:w-full" />
             {
               routes.map((route, index) =>
-                <Navbar.Link className="text-xl md:text-sm" key={index} href="#">
+                <Navbar.Link className="text-xl md:text-sm lg:text-xl" key={index} href="#">
                   {route}
                 </Navbar.Link>
               )}
