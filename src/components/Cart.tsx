@@ -11,7 +11,7 @@ export const Cart: React.FC<Props> = ({ books }) => {
             <section className="grid lg:grid-cols-4 gap-4 md:grid-cols-2">
                 {
                     books.map((book, index) => (
-                        <div className="col-span-1">
+                        <div className="col-span-1 flex justify-center">
                             <CartCard key={index} {...book} />
                         </div>
                     ))
