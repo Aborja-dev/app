@@ -5,7 +5,7 @@ interface Props {
 }
 export const Hero: React.FC<Props > = ({items}) => {
     return (
-        <div className="grid grid-cols-4 gap-2 auto-rows-auto pt-10 h-[1200px] ">
+        <div className="grid grid-cols-4 gap-2 auto-rows-auto pt-10 h-[1200px] md:h-[1000px] ">
             <div className="col-span-4 row-span-2 relative overflow-hidden">
                 <HeroCard {...items[0]} urlImg={`url(${items[0].urlImg})`} large />
             </div>

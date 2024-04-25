@@ -3,7 +3,7 @@ import { BlogEntry } from "../../types/types"
 export const BlogEntryItem: React.FC<BlogEntry> = ({ urlImg, tags, title, date, summary, comments }) => {
     return (
         <article className="group bg-white border shadow-sm flex flex-col overflow-hidden hover:cursor-pointer">
-            <div className="w-full h-[250px]">
+            <div className="w-full h-[150px]">
                 <img src={urlImg} className="object-cover object-center w-full h-full" alt="" />
             </div>
             <div className="p-5 flex flex-col gap-2">
