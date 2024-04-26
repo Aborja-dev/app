@@ -1,3 +1,5 @@
+import { Icon, Image } from "../../../components/shared"
+
 export const Aside = () => {
     return (
         <section id="aside" className="w-full h-full">
