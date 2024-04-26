@@ -1,5 +1,5 @@
 import { HomePage } from "./pages/Home"
-import { ProductPage } from "./pages/Product"
+import { ProductPage } from "./pages/Product/index"
 
 function App() {
 

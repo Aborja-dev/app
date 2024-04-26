@@ -1,10 +1,9 @@
 
-import { CartCard } from "../components/cards"
-import { Icon } from "../components/shared/Icon"
-import { Image } from "../components/shared/Image"
-import { Rating } from "../components/shared/Rating"
-import {books} from '../../data/books.json'
-import { BaseLayout } from "../layout/BaseLayout"
+import { CartCard } from "../../components/cards"
+import { Icon, Image, Rating } from "../../components/shared"
+import { BaseLayout } from "../../layout/BaseLayout"
+import {books} from '../../../data/books.json'
+
 export const ProductPage = () => {
     return (       
         <>
@@ -76,7 +75,7 @@ export const ProductPage = () => {
                     </div>
                 </article>
             </section>
-            <section id="detproduct-details" className="w-full h-full">
+            <section id="product-details" className="w-full h-full">
                 <section>
                     <ul>
                         <li>Description</li>
