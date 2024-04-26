@@ -17,7 +17,7 @@ export interface BlogEntry {
     comments: number
 }
 export interface Book {
-    urlImg: string
+    urlImg: string | string[]
     tags: string[]
     author: string
     title: string
@@ -27,5 +27,13 @@ export interface Book {
     rating: number
     comments: number
     subtitle: string
+    description?: string
 }
+
+export interface Image {
+    url: string
+    height?: string
+    width?: string
+}
+
 export type Slots = Record<string, React.ReactNode>

@@ -1,5 +1,4 @@
 import { Hero, Cart, Reviews, Authors } from "../components"
-import { ContactUs } from "../components/ContactUs"
 import { BaseLayout } from "../layout/BaseLayout"
 import {books} from "../../data/books.json"
 import {reviews} from "../../data/reviews.json"
@@ -16,7 +15,6 @@ export const HomePage = () => {
                 <Cart books={booksJson} />
                 <Reviews reviews={reviewsJson.slice(0, 3)} />
                 <Authors authors={authorsJson} />
-                <ContactUs />
             </BaseLayout >
         </div>
     )

@@ -6,10 +6,10 @@ import { Rating } from "../shared/Rating"
 export const CartCard: React.FC<Book> = ({ urlImg, tags, author, price, rating, title }) => {
     return (
         <article className="group bg-white border shadow-sm flex lg:flex-col p-1 lg:p-3 overflow-hidden hover:border-black">
-                        <div className="w-2/4 md:w-2/5 flex lg:w-full justify-center p-2 md:p-4">
-                            <img className="w-full h-full object-cover" src={urlImg} alt="book cover" />
-                        </div>
-                        <div className=" flex flex-col w-2/4 lg:w-full gap-1 lg:gap-2
+            <div className="w-2/4 md:w-2/5 flex lg:w-full justify-center p-2 md:p-4">
+                <img className="w-full h-full object-cover" src={urlImg} alt="book cover"/>
+            </div>
+            <div className=" flex flex-col w-2/4 lg:w-full gap-1 lg:gap-2
                     transform 
                     lg:group-hover:-translate-y-[50px]
                     duration-300 
