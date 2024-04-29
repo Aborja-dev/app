@@ -1,19 +1,23 @@
-import { Icon, Image } from "../../../components/shared"
+import { Image } from "../../../components/shared"
 
 export const Aside = () => {
     return (
-        <section id="aside" className="w-full h-full">
-                    <article>
-                        <Image url="https://random.imagecdn.app/500/500" />
-                        <div id="info">
-                            <p>Blindside (Michael Bennett Book 12)</p>
-                            <p>$69.99</p>
-                        </div>
-                        <div>
-                            <Icon url="icons/Heart.svg" size={'w-10 h-10'} />
-                            <Icon url="icons/share.svg" size={'w-10 h-10'} />
-                        </div>
-                    </article>
-                </section>
+        <section id="aside" className="w-full h-full border p-4 mt-4">
+            <article className='grid grid-cols-6 gap-4 py-6 mt-4'>
+                <Image className='col-span-1 row-span-2 h-full' url="https://random.imagecdn.app/500/500" />
+                <p className="col-span-4 ml-4">Blindside (Michael Bennett Book 12)</p>
+                <p className="col-span-4 ml-4">$69.99</p>
+            </article>
+            <article className='grid grid-cols-6 gap-4 py-6 mt-4'>
+                <Image className='col-span-1 row-span-2 h-full' url="https://random.imagecdn.app/500/500" />
+                <p className="col-span-4 ml-4">Blindside (Michael Bennett Book 12)</p>
+                <p className="col-span-4 ml-4">$69.99</p>
+            </article>
+            <article className='grid grid-cols-6 gap-4 py-6 mt-4'>
+                <Image className='col-span-1 row-span-2 h-full' url="https://random.imagecdn.app/500/500" />
+                <p className="col-span-4 ml-4">Blindside (Michael Bennett Book 12)</p>
+                <p className="col-span-4 ml-4">$69.99</p>
+            </article>
+        </section>
     )
 }
