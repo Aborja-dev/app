@@ -4,10 +4,10 @@ import { Rating } from "../../../components/shared/Rating"
 
 export const Product = () => {
     return (
-        <div data-id="product" className="w-full h-full mt-8">
+        <div data-id="product" className="w-full h-full mt-8 md:mt-0">
                     <article className="w-full h-full p-2">
-                        <div className="mx-auto container py-10">
-                        <Image url="https://random.imagecdn.app/500/500" className="conainer mx-auto" height="h-[350px]" width="w-4/6"/>
+                        <div className="mx-auto container py-10 md:py-4">
+                        <Image url="https://random.imagecdn.app/500/500" className="conainer mx-auto" height="h-[350px]" width="w-4/6 md:w-5/6"/>
                         </div>
                         <div className="flex flex-col gap-4">
                             <h2 data-id="title" className={`
