@@ -4,9 +4,10 @@ import { Rating } from "../../../components/shared"
 export const ProductDetail = () => {
     const [tag, setTag] = useState<string>('description')
     return (
-        <section data-id="product-details" className="w-full h-full mt-4 flex flex-col">
-            <section className="border-b pb-2">
-                <ul className="flex gap-2 justify-around group">
+        <section data-id="product-details" className="w-full h-full mt-4 flex flex-col lg:flex-row">
+            <section className="border-b pb-2 lg:pb-0 lg:w-1/4">
+                <ul className="flex gap-2 justify-around group h-full
+                lg:pt-8 lg:px-2 lg:border lg:justify-start lg:flex-col">
                     <li 
                     className="group-hover:cursor-pointer active:border-b active:border-b-gray-500 pb-2"
                     onClick={() => setTag('description')}
@@ -21,7 +22,7 @@ export const ProductDetail = () => {
             </section>
             {
                 tag === 'description' && (
-                    <section data-id="description" className="p-4 border ">
+                    <section data-id="description" className="p-4 border lg:w-3/4 ">
                         We aim to show you accurate product information. Manufacturers, suppliers and others provide what you see here, and we have not verified it. See our disclaimer
                         #1 New York Times Bestseller
                         A Reese Witherspoon x Hello Sunshine Book Club Pick
@@ -34,7 +35,7 @@ export const ProductDetail = () => {
             }
             {
                 tag === 'details' && (
-                    <section id="details" className="p-4 border">
+                    <section id="details" className="p-4 border lg:w-3/4">
                         <article className="p-4 grid place-items-center grid-cols-2 gap-2">
                             <span>SKU</span>
                             <span className="font-bold">BW-1003010</span>
@@ -51,7 +52,7 @@ export const ProductDetail = () => {
             }
             {
                 tag === 'reviews' && (
-                    <section className="border p-2 pb-8">
+                    <section className="border p-2 pb-8 lg:w-3/4">
                         <article className="border-b flex flex-col gap-2 p-2 pb-8 mb-4">
                             <span className="font-bold">Abraham</span>
                             <Rating rating={4} size="small" />

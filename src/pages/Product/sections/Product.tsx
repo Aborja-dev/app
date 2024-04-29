@@ -34,13 +34,15 @@ export const Product = () => {
                             </div>
                                 <button className="py-2 bg-black text-white">Add to cart</button>
                         </div>
+                        <div className="flex">
                         <div className="inline-flex my-4 justify-center w-full items-center">
                             <Icon url="icons/Heart.svg" size="w-6 h-6" />
-                            <p className="text-xl text-gray-500">Add to wishlist</p>
+                            <p className="text-xl lg:text-base text-gray-500">Add to wishlist</p>
                         </div>
                         <div className="inline-flex my-4 justify-center w-full items-center">
                             <Icon url="icons/share.svg" size="w-6 h-6" />
-                            <p className="text-xl text-gray-500">Share</p>
+                            <p className="text-xl lg:text-base text-gray-500">Share</p>
+                        </div>
                         </div>
                     </article>
 

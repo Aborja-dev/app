@@ -4,7 +4,7 @@ import ChevronRightIconSVG  from "@/assets/icons/chevron-right-svgrepo-com.svg"
 export const Breadcrumb = () => {
   const styleItem = `
     inline-flex items-center 
-    text-sm font-medium text-gray-700 
+    text-sm lg:text-xl font-medium text-gray-700 
     dark:text-gray-400 dark:hover:text-white
     `
   return (
